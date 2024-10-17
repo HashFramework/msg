@@ -1,0 +1,19 @@
+[package]
+name = "shmem-ring-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# ipc
+mmap-sync = "1.0"
+shmem-ipc = "0.3"
+dbus = "0.9"
+dbus-crossroads = "0.5"
+
+[[example]]
+name = "shmem-ring-client"
+path = "examples/shmem_ring/client.rs"
+
+[[example]]
+name = "shmem-ring-server"
+path = "examples/shmem_ring/server.rs"
